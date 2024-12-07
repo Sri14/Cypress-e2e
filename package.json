@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test-sky": "npx cypress run --spec cypress/e2e/Environments/TestEnvs.cy.js --config-file sky.config.js",
+    "test-bbc": "npx cypress run --spec cypress/e2e/Environments/TestEnvs.cy.js --config-file bbc.config.js"
   },
   "keywords": [],
   "author": "",
@@ -14,6 +15,10 @@
   },
   "dependencies": {
     "@cypress/grep": "^4.1.0",
-    "cypress-tags": "^1.2.2"
+    "cypress-plugin-api": "^2.11.2",
+    "cypress-tags": "^1.2.2",
+    "fast-csv": "^5.0.2",
+    "pg": "^8.13.1",
+    "wick-a11y": "^1.2.2"
   }
 }

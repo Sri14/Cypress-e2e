@@ -15,6 +15,8 @@
 
 // Import commands.js using ES2015 syntax:
 import './commands'
+import 'wick-a11y';
+import 'cypress-plugin-api'
 const registerCypressGrep = require('@cypress/grep')
 registerCypressGrep()
 
