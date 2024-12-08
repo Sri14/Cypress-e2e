@@ -15,9 +15,11 @@
   },
   "dependencies": {
     "@cypress/grep": "^4.1.0",
+    "cypress-delete-downloads-folder": "^0.0.6",
     "cypress-plugin-api": "^2.11.2",
     "cypress-tags": "^1.2.2",
     "fast-csv": "^5.0.2",
+    "pdf-parse": "^1.1.1",
     "pg": "^8.13.1",
     "wick-a11y": "^1.2.2"
   }

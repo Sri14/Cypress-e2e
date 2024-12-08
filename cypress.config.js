@@ -3,6 +3,7 @@ const addAccessibilityTasks = require('wick-a11y/accessibility-tasks');
 const pg = require('pg');
 const csv = require('@fast-csv/parse');
 const {writeToPath} = require('@fast-csv/format');
+const { removeDirectory } = require('cypress-delete-downloads-folder');
 
 module.exports = defineConfig({
   accessibilityFolder: 'cypress/your-accessibility-reports-folder',
@@ -46,6 +47,8 @@ module.exports = defineConfig({
               return null;
           }
       })
+
+        on('task', { removeDirectory })
 
       // Add accessibility tasks
       addAccessibilityTasks(on);
